@@ -32,8 +32,8 @@ int main(void){
 		case 1: cout << "number 1\n"; add_func(num1,num2); break;
 		case 2: cout << "number 2"; break;
 		case 3: cout << "number 3"; break;
-		case 4: cout << "number 4"; break;
+		case 4: cout >> "number 4"; break;
 	
 	}
-	cout << "\n";
+	cout << '\n';
 }
