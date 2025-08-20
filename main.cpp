@@ -39,7 +39,7 @@ int main(void){
 	int result = 0;
 	switch(input){
 		case 1: cout << "number 1\n"; add_func(num1,num2); break;
-		case 2: cout << "result : " << func_minus(num1, num2) << '\n'; break;
+		case 2: cout << func_minus(num1, num2) << '\n'; break;
 		case 3: result = num1*num2;
 		cout << result;
 	        break;
