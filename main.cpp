@@ -2,6 +2,13 @@
 
 using namespace std;
 
+float divide(int a,int b)
+{
+	if(b==0) return -1 //divie 0 err
+	return a/b;
+}
+
+
 int main(void){
 	int input;
 	cout << "1 is add\n";
@@ -28,7 +35,7 @@ int main(void){
 		case 1: cout << "number 1"; break;
 		case 2: cout << "number 2"; break;
 		case 3: cout << "number 3"; break;
-		case 4: cout << "number 4"; break;
+		case 4: cout << divide(num1,num2); break;
 	
 	}
 	cout << "\n";
