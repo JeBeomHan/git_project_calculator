@@ -2,6 +2,10 @@
 
 using namespace std;
 
+void add_func(int num1,int num2){
+	cout<<num1<<" + "<<num2<<" = "<<num1+num2;
+}
+
 int main(void){
 	int input;
 	cout << "1 is add\n";
@@ -25,7 +29,7 @@ int main(void){
 
 	int result = 0;
 	switch(input){
-		case 1: cout << "number 1"; break;
+		case 1: cout << "number 1\n"; add_func(num1,num2); break;
 		case 2: cout << "number 2"; break;
 		case 3: cout << "number 3"; break;
 		case 4: cout << "number 4"; break;
