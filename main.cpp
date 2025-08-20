@@ -5,13 +5,18 @@ using namespace std;
 void add_func(int num1,int num2){
 	cout<<num1<<" + "<<num2<<" = "<<num1+num2;
 }
+void printMenu(void)
+float divide(int a,int b)
+{
+	if(b==0) return -1; //divie 0 err
+	return a/b;
+}
 
 int main(void){
 	int input;
-	cout << "1 is add\n";
-	cout << "2 is subtract\n";
-	cout << "3 is multiple\n";
-	cout << "4 is divide\n";
+	cout << "printMenu\n";
+	printMenu();
+
 	cout << "choose function: ";
 	cin >> input;
 	cout << "\n";
@@ -33,7 +38,15 @@ int main(void){
 		case 2: cout << "number 2"; break;
 		case 3: cout << "number 3"; break;
 		case 4: cout >> "number 4"; break;
-	
+		case 4: cout << divide(num1,num2); break;
 	}
 	cout << '\n';
 }
+
+void printMenu(void){
+	cout << "1 is add\n";
+	cout << "2 is subtract\n";
+	cout << "3 is multiple\n";
+	cout << "4 is divide\n";
+}
+
