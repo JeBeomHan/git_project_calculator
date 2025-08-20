@@ -6,7 +6,7 @@ using namespace std;
 void add_func(int num1,int num2){
 	cout<<num1<<" + "<<num2<<" = "<<num1+num2;
 }
-void printMenu(void)
+void printMenu(void);
 
 int func_minus(const int& num1, const int& num2){
 	return num1 - num2;
