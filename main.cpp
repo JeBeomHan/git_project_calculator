@@ -4,7 +4,7 @@
 using namespace std;
 
 void add_func(int num1,int num2){
-	cout<<num1<<" + "<<num2<<" = "<<num1+num2;
+	cout<<num1<<" - "<<num2<<" = "<<num1+num2;
 }
 void printMenu(void);
 
