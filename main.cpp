@@ -16,6 +16,12 @@ float divide(int a,int b)
 	if(b==0) return -1; //divie 0 err
 	return a/b;
 }
+int multiple(int a, int b)
+{
+	if (b==0) return -1;
+	return a/b;
+
+}
 
 int main(void){
 	int input;
@@ -40,9 +46,7 @@ int main(void){
 	switch(input){
 		case 1: cout << "number 1\n"; add_func(num1,num2); break;
 		case 2: cout << "result : " << func_minus(num1, num2) << '\n'; break;
-		case 3: result = num1*num2;
-		cout << result;
-	        break;
+		case 3: cout << multiple(num1, num2); break;
 		case 4: cout << divide(num1,num2); break;
 	}
 	cout << '\n';
@@ -54,5 +58,6 @@ void printMenu(void){
 	cout << "3 is multiple\n";
 	cout << "4 is divide\n";
 }
+
 
 
