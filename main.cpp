@@ -31,7 +31,7 @@ int main(void){
 	cout << "choose function: ";
 	cin >> input;
 	cout << "\n";
-	cout << "Enter num1 and num 2\n";
+	cout << "Enter num1 and num2\n";
 
 	int num1;
 	cout << "num1: ";
