@@ -13,8 +13,8 @@ int func_minus(const int& num1, const int& num2){
 }
 float divide(int a,int b)
 {
-	if(b==0) return -1; //divie 0 err
-	return a/b;
+	//if(b==0) return -1; //divie 0 err
+	return a*b;
 }
 
 int main(void){
