@@ -24,12 +24,11 @@ int main(void){
 	cin >> input;
 	cout << "\n";
 	cout << "Enter num1 and num 2\n";
-	
+
 	int num1;
 	cout << "num1: ";
 	cin >> num1;
 	cout << "\n";
-	
 	int num2;
 	cout << "num2: ";
 	cin >> num2;
@@ -39,9 +38,10 @@ int main(void){
 	switch(input){
 		case 1: cout << "number 1"; break;
 		case 2: cout << "result : " << func_minus(num1, num2) << '\n'; break;
-		case 3: cout << "number 3"; break;
+		case 3: result = num1*num2;
+		cout << result;
+	        break;
 		case 4: cout << divide(num1,num2); break;
-	
 	}
 	cout << "\n";
 }
