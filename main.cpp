@@ -13,8 +13,14 @@ int func_minus(const int& num1, const int& num2){
 }
 float divide(int a,int b)
 {
-	if(b==0) return -1; //divie 0 err
+	//if(b==0) return -1; //divie 0 err
+	return a*b;
+}
+int multiple(int a, int b)
+{
+	if (b==0) return -1;
 	return a/b;
+
 }
 
 int main(void){
@@ -54,5 +60,6 @@ void printMenu(void){
 	cout << "3 is multiple\n";
 	cout << "4 is divide\n";
 }
+
 
 
