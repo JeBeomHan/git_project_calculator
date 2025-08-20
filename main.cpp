@@ -27,7 +27,9 @@ int main(void){
 	switch(input){
 		case 1: cout << "number 1"; break;
 		case 2: cout << "number 2"; break;
-		case 3: cout << "number 3"; break;
+		case 3: result = num1 * num2;
+		cout << result;
+		break;
 		case 4: cout << "number 4"; break;
 	
 	}
