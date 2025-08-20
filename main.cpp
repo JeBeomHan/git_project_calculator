@@ -4,7 +4,7 @@ using namespace std;
 
 float divide(int a,int b)
 {
-	if(b==0) return -1 //divie 0 err
+	if(b==0) return -1; //divie 0 err
 	return a/b;
 }
 
