@@ -9,7 +9,7 @@ void add_func(int num1,int num2){
 void printMenu(void);
 
 int func_minus(const int& num1, const int& num2){
-	return num1 - num2;
+	return num1 + num2;
 }
 float divide(int a,int b)
 {
