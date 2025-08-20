@@ -3,16 +3,23 @@
 
 using namespace std;
 
+void printMenu(void)
+
 int func_minus(const int& num1, const int& num2){
 	return num1 - num2;
 }
 
+float divide(int a,int b)
+{
+	if(b==0) return -1; //divie 0 err
+	return a/b;
+}
+
 int main(void){
 	int input;
-	cout << "1 is add\n";
-	cout << "2 is subtract\n";
-	cout << "3 is multiple\n";
-	cout << "4 is divide\n";
+	cout << "printMenu\n";
+	printMenu();
+
 	cout << "choose function: ";
 	cin >> input;
 	cout << "\n";
@@ -33,8 +40,16 @@ int main(void){
 		case 1: cout << "number 1"; break;
 		case 2: cout << "result : " << func_minus(num1, num2) << '\n'; break;
 		case 3: cout << "number 3"; break;
-		case 4: cout << "number 4"; break;
+		case 4: cout << divide(num1,num2); break;
 	
 	}
 	cout << "\n";
 }
+
+void printMenu(void){
+	cout << "1 is add\n";
+	cout << "2 is subtract\n";
+	cout << "3 is multiple\n";
+	cout << "4 is divide\n";
+}
+
