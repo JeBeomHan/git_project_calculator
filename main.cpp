@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 using namespace std;
@@ -6,6 +7,10 @@ void add_func(int num1,int num2){
 	cout<<num1<<" + "<<num2<<" = "<<num1+num2;
 }
 void printMenu(void)
+
+int func_minus(const int& num1, const int& num2){
+	return num1 - num2;
+}
 float divide(int a,int b)
 {
 	if(b==0) return -1; //divie 0 err
@@ -21,12 +26,11 @@ int main(void){
 	cin >> input;
 	cout << "\n";
 	cout << "Enter num1 and num 2\n";
-	
+
 	int num1;
 	cout << "num1: ";
 	cin >> num1;
 	cout << "\n";
-	
 	int num2;
 	cout << "num2: ";
 	cin >> num2;
@@ -35,9 +39,10 @@ int main(void){
 	int result = 0;
 	switch(input){
 		case 1: cout << "number 1\n"; add_func(num1,num2); break;
-		case 2: cout << "number 2"; break;
-		case 3: cout << "number 3"; break;
-		case 4: cout >> "number 4"; break;
+		case 2: cout << "result : " << func_minus(num1, num2) << '\n'; break;
+		case 3: result = num1*num2;
+		cout << result;
+	        break;
 		case 4: cout << divide(num1,num2); break;
 	}
 	cout << '\n';
@@ -49,4 +54,5 @@ void printMenu(void){
 	cout << "3 is multiple\n";
 	cout << "4 is divide\n";
 }
+
 
